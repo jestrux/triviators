@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fancy-font{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    letter-spacing: 0.07em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo{
+    font-family: 'Abril Fatface', cursive;
+}
+
+.animate-float{
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    from, to {
+        transform: translateY(-1%);
+    }
+    50% {
+        transform: translateY(1%);
+    }
 }
